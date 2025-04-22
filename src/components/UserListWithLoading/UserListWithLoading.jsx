@@ -34,7 +34,11 @@ const UserListWithLoading = () => {
         return (
             <div className="text-center">
                 <p className="text-red-500">Error: {error.message}</p>
-                <button className="mt-3 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" onClick={() => window.location.reload()}>Reintentar</button>
+                <button 
+                    className="mt-3 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    onClick={() => window.location.reload()}>
+                        Reintentar
+                </button>
             </div>
         );
     }
