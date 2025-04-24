@@ -18,6 +18,8 @@ const CounterWithReactMemo = () => {
             console.log('Calculando...')
             return num * 2 
         }, [num])
+        
+        return <p>Resultado: { result }</p>
     }
 
     return (
