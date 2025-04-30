@@ -6,16 +6,27 @@
 // import UserList from './components/UserList/UserList'
 // import UserListWithLoading from './components/UserListWithLoading/UserListWithLoading'
 // import SearchPost from './components/SearchPost/SearchPost'
-import Counter from './components/Counter/Counter'
-import Authenticator from './components/authenticator'
-import ThemeCustom from './components/ThemeCustom'
-import CounterWithCustomHook from './components/CounterWithCustomHook'
-import CounterWithReactMemo from './components/CounterWithReactMemo'
+import Counter from './components/Counter/Counter.jsx'
+import Authenticator from './components/Authenticator.jsx'
+import ThemeCustom from './components/ThemeCustom.jsx'
+import CounterWithCustomHook from './components/CounterWithCustomHook.jsx'
+import CounterWithReactMemo from './components/CounterWithReactMemo.jsx'
+import CounterTs from './components/CounterTs.js'
+
+import Button from './components/Button.js'
 
 import './App.css'
 
+function greet(name: string) {
+    return (`Hola ${name}`);
+}
+
 function App() {
     const items = ['react', 'javascript', 'css', 'html']
+
+    const handClick = () => alert('Ya estoy clickeado!')
+
+    console.log(greet('cristian'));
     
     return (
         <>
@@ -41,6 +52,12 @@ function App() {
             
             <br/>
             <CounterWithReactMemo />
+
+            <br/>
+            <Button onclick={ handClick } label='Click me!'/>
+
+            <br/>
+            <CounterTs />
         </>
     )
 }
