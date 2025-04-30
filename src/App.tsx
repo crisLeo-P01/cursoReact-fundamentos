@@ -6,7 +6,7 @@
 // import UserList from './components/UserList/UserList'
 // import UserListWithLoading from './components/UserListWithLoading/UserListWithLoading'
 // import SearchPost from './components/SearchPost/SearchPost'
-import Counter from './components/Counter/Counter.jsx'
+import Counter from './components/CounterWithUseReducer.js'
 import Authenticator from './components/Authenticator.jsx'
 import ThemeCustom from './components/ThemeCustom.jsx'
 import CounterWithCustomHook from './components/CounterWithCustomHook.jsx'
